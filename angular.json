@@ -29,6 +29,9 @@
             ],
             "styles": [
               "src/styles.scss"
+              {
+                "input": "/.node_modules/boostrap/dist/css/bootstrape.css"
+              }
             ],
             "scripts": []
           },
