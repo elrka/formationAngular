@@ -33,6 +33,13 @@
                 "input": "/.node_modules/boostrap/dist/css/bootstrape.css"
               }
             ],
+
+            "stylePreprocessorOptions": {
+              "includePaths": [
+                "src/stylings/"
+              ]
+
+            },
             "scripts": []
           },
           "configurations": {
