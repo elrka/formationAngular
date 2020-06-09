@@ -10,6 +10,7 @@ import { IconsModule } from './icons/icons.module';
 import { CoreModule } from './core/core.module';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { HttpClientModule } from '@angular/common/http'
 
 @NgModule({
   declarations: [
@@ -24,8 +25,9 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     IconsModule,
     CoreModule,
     NgbModule,
-    FontAwesomeModule
-  ],
+    FontAwesomeModule,
+    HttpClientModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })
