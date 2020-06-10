@@ -4,6 +4,7 @@ import { Observable } from 'rxjs';
 import { map} from 'rxjs/operators'
 import { environment } from 'src/environments/environment';
 import { HttpClient } from '@angular/common/http';
+import { StateClient } from 'src/app/shared/enums/state-client.enum';
 
 @Injectable({
   providedIn: 'root'
@@ -29,5 +30,15 @@ export class ClientsService {
 
   set collection(new_collection: Observable<Clients[]>){
     this.pCollection = new_collection;
+  }
+
+  public updateItem(item: Clients): Observable<Clients> {
+    return this.http.put<Clients>(`${this.urlApi}clients/${item.id}`, item);
+  }
+
+  public changeState(item: Clients, state: StateClient): Observable<Clients> {
+    const obj = new Clients({...item});
+    obj.state = state;
+    return this.updateItem(obj);
   }
 }
