@@ -20,10 +20,11 @@
     <tr *ngFor="let item of collection">
       <td>{{item.typePresta }}</td>
       <td>{{item.client}}</td>
-      <td>{{item }}</td>
-      <td>{{item.tjmHt }}</td> |currency:'Eur'
-      <td>{{item.totalHt() }}</td>
-      <td>{{item.totalTcc()}}</td>
+      <td>{{item.nbJours }}</td>
+      <td>{{item.tjmHt |currency:'Eur' }}</td>
+      <td>{{item |total| currency:'Eur' }}</td>
+      <td>{{item |total : 'ttc' |currency:'Eur'}}</td>
+      <td>{{item.state}}</td>
     </tr>
 </tbody>
 
