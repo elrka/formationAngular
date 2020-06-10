@@ -17,9 +17,12 @@ export class PageListOrdersComponent implements OnInit {
      this.collection =datas
        });
     this.headers =[
-      "type",
+      "Type",
       "client",
-      "Tj Ht"
+      "Nbjours",
+      "Tjm HT",
+      "Total TTC",
+      "State"
     ]
   }
 
