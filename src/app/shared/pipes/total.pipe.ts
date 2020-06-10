@@ -8,7 +8,7 @@ export class TotalPipe implements PipeTransform {
   transform(value: any, ...args: any[]): number {
     if (value) {
       if (args.length > 0) {
-        return value.totalTtc();
+        return value.totalTcc(); 
       }
       return value.totalHt();
     }
