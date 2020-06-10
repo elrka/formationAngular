@@ -6,13 +6,15 @@ import { TotalPipe } from './pipes/total.pipe';
 import { StateDirective } from './directive/state.directive';
 import { NbJoursDirective } from './directive/nb-jours.directive';
 import { TableDarkComponent } from './components/table-dark/table-dark.component';
+import { RouterModule } from '@angular/router';
 
 
 
 @NgModule({
   declarations: [TableLightComponent, BtnComponent, TotalPipe, StateDirective, NbJoursDirective, TableDarkComponent],
   imports: [
-    CommonModule
+    CommonModule,
+    RouterModule
   ],
   exports: [BtnComponent, TableLightComponent, TotalPipe, StateDirective,NbJoursDirective, TableDarkComponent]
 })

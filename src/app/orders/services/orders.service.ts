@@ -3,8 +3,8 @@ import { Orders } from 'src/app/shared/models/orders';
 import { map} from 'rxjs/operators'
 import { Observable } from 'rxjs';
 import { environment } from 'src/environments/environment';
+import { StateOrder } from 'src/app/shared/enums/sate-order.enum';
 import { HttpClient } from '@angular/common/http';
-import { StateOrder } from 'src/app/shared/enums/state-order.enum';
 
 
 @Injectable({
