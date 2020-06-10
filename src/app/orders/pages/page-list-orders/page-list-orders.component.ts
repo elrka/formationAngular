@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { OrdersService } from '../../services/orders.service';
 import { Orders } from 'src/app/shared/models/orders';
 import { StateOrder } from 'src/app/shared/enums/sate-order.enum';
-
+ 
 @Component({
   selector: 'app-page-list-orders',
   templateUrl: './page-list-orders.component.html',
