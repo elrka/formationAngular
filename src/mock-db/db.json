@@ -34,7 +34,7 @@
       "tjmHt": 700,
       "nbJours": 5,
       "tva": 20,
-      "state": "CANCEL",
+      "state": "CONFIRMED",
       "typePresta": "Formation",
       "client": "Atos",
       "comment": "Comment pour Atos",

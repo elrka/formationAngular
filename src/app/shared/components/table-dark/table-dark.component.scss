@@ -1,6 +1,6 @@
 @import 'theme';
 
-.table-light {
+.table-dark {
   .state-cancel {
     background: $color-error;
   }
@@ -10,13 +10,13 @@
   .state-confirmed {
     background: $color-success;
   }
-  .nbJour-sup{
+  /* .nbJour-sup{
     background: $color-success;
   }
 
   .nbJour-inf{
     background: $color-error;
-  }
+  } */
 }
 
 
