@@ -20,8 +20,6 @@ export class PageListOrdersComponent implements OnInit {
       "type",
       "client",
       "Tj Ht"
-
-
     ]
   }
 

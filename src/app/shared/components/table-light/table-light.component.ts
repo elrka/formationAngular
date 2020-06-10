@@ -12,8 +12,10 @@ export class TableLightComponent implements OnInit {
 /*   @Input() collection: Orders[];
  */
   @Input() headers : string;
-  @Input() collection: Clients[];
-  constructor() { }
+/*   @Input() collection: Clients[];
+ */
+@Input() collection: Orders[];
+ constructor() { }
 
   ngOnInit(): void {
   }

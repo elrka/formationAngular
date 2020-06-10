@@ -5,11 +5,7 @@
     <th scope="col" *ngFor="let item of headers ">{{ item }}</th>
   </tr>
 </thead>
-
-<tbody>
-  <tr *ngFor="let item of collection">
-
-    <tbody>
+<!-- <tbody>
       <tr *ngFor="let item of collection">
         <td>{{item.state }}</td>
         <td>{{item.tva}}</td>
@@ -18,7 +14,18 @@
         <td>{{item.ca }}</td>
         <td>{{item.comment}}</td>
       </tr>
-    </tbody>
+  </tbody> -->
+
+   <tbody>
+    <tr *ngFor="let item of collection">
+      <td>{{item.typePresta }}</td>
+      <td>{{item.client}}</td>
+      <td>{{item }}</td>
+      <td>{{item.tjmHt }}</td> |currency:'Eur'
+      <td>{{item.totalHt() }}</td>
+      <td>{{item.totalTcc()}}</td>
+    </tr>
+</tbody>
 
   </table>
 </div>
