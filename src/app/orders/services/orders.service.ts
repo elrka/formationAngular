@@ -47,6 +47,15 @@ export class OrdersService {
       return this.updateItem(obj);
     }
 
+    // add item
+
+    public add(item: Orders): Observable<Orders>{
+      return this.http.post<Orders>(`${this.urlApi}orders`
+      , item);
+    }
+
+    //delete item
+
 
 }
 

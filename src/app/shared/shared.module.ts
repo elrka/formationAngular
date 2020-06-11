@@ -10,6 +10,8 @@ import { RouterModule } from '@angular/router';
 import { TemplatesModule } from '../templates/templates.module';
 import { TemplateAComponent } from '../templates/components/template-a/template-a.component';
 import { TemplateBComponent } from '../templates/components/template-b/template-b.component';
+import { TextModule } from '../text/text.module';
+import { TextComponent } from '../text/components/text/text.component';
 
 
 
@@ -18,8 +20,9 @@ import { TemplateBComponent } from '../templates/components/template-b/template-
   imports: [
     CommonModule,
     RouterModule,
-    TemplatesModule
+    TemplatesModule,
+    TextModule
   ],
-  exports: [BtnComponent, TableLightComponent, TotalPipe, StateDirective,NbJoursDirective, TableDarkComponent,TemplateAComponent, TemplateBComponent]
+  exports: [BtnComponent, TableLightComponent, TotalPipe, StateDirective,NbJoursDirective, TableDarkComponent,TemplatesModule, TextComponent]
 })
 export class SharedModule { }
