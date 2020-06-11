@@ -7,6 +7,9 @@ import { StateDirective } from './directive/state.directive';
 import { NbJoursDirective } from './directive/nb-jours.directive';
 import { TableDarkComponent } from './components/table-dark/table-dark.component';
 import { RouterModule } from '@angular/router';
+import { TemplatesModule } from '../templates/templates.module';
+import { TemplateAComponent } from '../templates/components/template-a/template-a.component';
+import { TemplateBComponent } from '../templates/components/template-b/template-b.component';
 
 
 
@@ -14,8 +17,9 @@ import { RouterModule } from '@angular/router';
   declarations: [TableLightComponent, BtnComponent, TotalPipe, StateDirective, NbJoursDirective, TableDarkComponent],
   imports: [
     CommonModule,
-    RouterModule
+    RouterModule,
+    TemplatesModule
   ],
-  exports: [BtnComponent, TableLightComponent, TotalPipe, StateDirective,NbJoursDirective, TableDarkComponent]
+  exports: [BtnComponent, TableLightComponent, TotalPipe, StateDirective,NbJoursDirective, TableDarkComponent,TemplateAComponent, TemplateBComponent]
 })
 export class SharedModule { }

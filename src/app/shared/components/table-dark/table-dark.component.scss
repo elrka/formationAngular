@@ -18,6 +18,18 @@
     background: $color-error;
   } */
 }
+  app-template-a {
+    .table-dark {
+      .state-option {
+        background: $color1;
+      }
+    }
+  }
+  app-template-b {
+    .table-dark {
+      .state-option {
+        background: $color2;
+      }
+    }
 
-
-
+  }
