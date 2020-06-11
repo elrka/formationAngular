@@ -3,6 +3,7 @@ import { OrdersService } from '../../services/orders.service';
 import { StateOrder } from 'src/app/shared/enums/sate-order.enum';
 import { Orders } from 'src/app/shared/models/orders';
 import { Btn } from 'src/app/shared/interfaces/btn-i';
+import { Subscription, Observable } from 'rxjs';
 
 @Component({
   selector: 'app-page-list-orders',
@@ -10,7 +11,9 @@ import { Btn } from 'src/app/shared/interfaces/btn-i';
   styleUrls: ['./page-list-orders.component.scss']
 })
 export class PageListOrdersComponent implements OnInit {
-  public collection : Orders[];
+/*   public collection : Orders[];
+ */
+  public collection$: Observable<Orders[]>;
   public headers: String[];
   public states = Object.values(StateOrder);
 
@@ -36,10 +39,14 @@ export class PageListOrdersComponent implements OnInit {
       action :true
      }
 
-
+/*
     this.os.collection.subscribe((datas) =>{
      this.collection =datas
-       });
+       }); */
+
+       this.collection$ = this.os.collection;
+
+
     this.headers =[
       "Type",
       "client",
