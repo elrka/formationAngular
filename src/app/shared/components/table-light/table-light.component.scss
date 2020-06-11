@@ -10,6 +10,7 @@
   .state-confirmed {
     background: $color-success;
   }
+
   .nbJour-sup{
     background: $color-success;
   }
@@ -19,20 +20,20 @@
   }
 }
 
-  app-template-a {
-    .table-light {
-      .state-option {
-        background: $color1;
-      }
+app-template-a {
+  .table-light {
+    .state-option {
+      background: $color1;
     }
   }
-  app-template-b {
-    .table-light {
-      .state-option {
-        background: $color2;
-      }
+}
+app-template-b {
+  .table-light {
+    .state-option {
+      background: $color2;
     }
   }
+}
 
 
 

@@ -1,4 +1,4 @@
-<app-template-b title="Orders" subtitle="all orders" >
+<app-template-a title="Orders" subtitle="all orders" >
 
 <app-table-dark *ngIf="collection$ |async as collection" [headers]="headers">
 <tr *ngFor="let item of collection">
@@ -22,4 +22,4 @@
 <app-btn [label]="btnAction.label" [action]="btnAction.action"></app-btn>
 
 
-</app-template-b>
+</app-template-a>
